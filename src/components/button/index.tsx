@@ -13,7 +13,7 @@ import { colors } from "@/styles/theme";
 import { s } from "./styles";
 
 type ButtonProps = TouchableOpacityProps & {
-  isLoading: boolean;
+  isLoading?: boolean;
 };
 
 function Button({ children, style, isLoading = false, ...rest }: ButtonProps) {
@@ -42,7 +42,7 @@ type IconProps = {
 };
 
 function Icon({ icon: Icon }: IconProps) {
-  return <Icon size={24} color={colors.gray[400]} />;
+  return <Icon size={24} color={colors.gray[100]} />;
 }
 
 Button.Title = Title;
